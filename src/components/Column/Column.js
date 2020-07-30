@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
-import ReactHtmlParser from 'react-html-parser';
+//import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 import Card from '../Card/Card.js';
 import Icon from '../Icon/Icon.js';
 
 class Column extends React.Component {
   state = {
-    // eslint-disable-next-line react/prop-types
-    cards: this.props.cards || [],
+    //cards: this.props.cards || [],
+    cards: PropTypes.array,
   };
 
   static propTypes = {
