@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from './App.scss';
 import List from '../List/List.js';
-//import Column from '../Column/Column.js';
 import { pageContents, listData } from '../../data/dataStore';
 
 class App extends React.Component {
