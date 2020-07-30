@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
@@ -9,6 +10,7 @@ import Icon from '../Icon/Icon.js';
 
 class Column extends React.Component {
   state = {
+    // eslint-disable-next-line react/prop-types
     cards: this.props.cards || [],
   };
 
@@ -18,7 +20,7 @@ class Column extends React.Component {
   };
 
   addCard(title) {
-    this.setState((state) => ({
+    this.setState(state => ({
       cards: [
         ...state.cards,
         {
@@ -51,7 +53,7 @@ class Column extends React.Component {
         <div className={styles.creator}>
           <Creator
             text={settings.cardCreatorText}
-            action={(title) => this.addCard(title)}
+            action={title => this.addCard(title)}
           />
         </div>
       </section>
