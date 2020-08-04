@@ -7,7 +7,11 @@ const baseConfig = () => ({
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'scripts_bundle.js',
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -19,7 +23,7 @@ const baseConfig = () => ({
         },
       },
     ],
-  }, 
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -33,14 +37,14 @@ const devConfig = () => ({
       {
         test: /\.(s*)css$/,
         use: [
-          'style-loader', 
+          'style-loader',
           {
             loader: 'css-loader',
             query: {
-              modules: true, 
+              modules: true,
               localIdentName: '[name]_[local]_[hash:base64:5]',
             },
-          }, 
+          },
           'sass-loader',
         ],
       },
@@ -52,21 +56,21 @@ const prodConfig = () => ({
   module: {
     rules: [
       {
-        test:/\.(s*)css$/,
-        use:[
+        test: /\.(s*)css$/,
+        use: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             query: {
-              modules: true, 
+              modules: true,
               localIdentName: '[name]_[local]_[hash:base64:5]',
             },
-          }, 
+          },
           'sass-loader',
         ],
       },
     ],
-  }, 
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'styles_bundle_[name].css',
@@ -76,7 +80,8 @@ const prodConfig = () => ({
 });
 
 module.exports = (env, argv) => {
-  const modeConfig = argv.mode == 'production' ? prodConfig : devConfig;
+  const modeConfig =
+    argv.mode == 'production' ? prodConfig : devConfig;
 
   return merge(baseConfig(), modeConfig());
 };
