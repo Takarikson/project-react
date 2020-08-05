@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import styles from './Faq.scss';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero.js';
