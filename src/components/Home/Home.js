@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Home.scss';
-import List from '../List/ListContainer.js';
+import List from '../List/ListLink.js';
 import Search from '../Search/SearchContainer.js';
 
 class Home extends React.Component {

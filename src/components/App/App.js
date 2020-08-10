@@ -6,7 +6,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout.js';
 import { AnimatedSwitch } from 'react-router-transition';
 import styles from './App.scss';
-
+//ZROBIĆ ZMIANY W KOMPONENCIE home 13.4
 const App = () => (
   <BrowserRouter>
     <MainLayout>
