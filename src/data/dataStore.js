@@ -110,14 +110,44 @@ const columns = [
   {
     id: 'column-3',
     listId: 'list-1',
-    title: 'Games',
-    icon: 'gamepad',
+    title: 'Music',
+    icon: 'guitar',
   },
   {
     id: 'column-4',
     listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    title: 'Books',
+    icon: 'book',
+  },
+  {
+    id: 'column-5',
+    listId: 'list-2',
+    title: 'Movies',
+    icon: 'film',
+  },
+  {
+    id: 'column-6',
+    listId: 'list-2',
+    title: 'Music',
+    icon: 'guitar',
+  },
+  {
+    id: 'column-7',
+    listId: 'list-3',
+    title: 'Books',
+    icon: 'book',
+  },
+  {
+    id: 'column-8',
+    listId: 'list-3',
+    title: 'Movies',
+    icon: 'film',
+  },
+  {
+    id: 'column-9',
+    listId: 'list-3',
+    title: 'Music',
+    icon: 'guitar',
   },
 ];
 
@@ -145,12 +175,72 @@ const cards = [
   {
     id: 'card-5',
     columnId: 'column-3',
-    title: 'The Witcher',
+    title: 'Misty in Roots',
   },
   {
     id: 'card-6',
     columnId: 'column-3',
-    title: 'Skyrim',
+    title: 'Rythm and Sound',
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'Born a Crime',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'Half of a Yellow Sun',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-5',
+    title: 'Malcolm X',
+  },
+  {
+    id: 'card-10',
+    columnId: 'column-5',
+    title: 'Gate Keepers',
+  },
+  {
+    id: 'card-11',
+    columnId: 'column-6',
+    title: 'Fela Kuti',
+  },
+  {
+    id: 'card-12',
+    columnId: 'column-6',
+    title: 'Two words',
+  },
+  {
+    id: 'card-13',
+    columnId: 'column-7',
+    title: 'Fraction of a Whole',
+  },
+  {
+    id: 'card-14',
+    columnId: 'column-7',
+    title: 'Dead Aid',
+  },
+  {
+    id: 'card-15',
+    columnId: 'column-8',
+    title: 'Good Father',
+  },
+  {
+    id: 'card-16',
+    columnId: 'column-8',
+    title: 'The Movie',
+  },
+  {
+    id: 'card-17',
+    columnId: 'column-9',
+    title: 'Rolling Stones',
+  },
+  {
+    id: 'card-18',
+    columnId: 'column-9',
+    title: 'The Doors',
   },
 ];
 
@@ -164,7 +254,7 @@ const initialStoreData = {
 export const info = {
   title: 'More information',
   image:
-    'https://i.postimg.cc/285yyj8Q/jeremy-thomas-4dp-Aqf-Tbv-KA-unsplash.jpg',
+    'https://i.postimg.cc/X76x6hj6/ian-dooley-Du-BNA1-QMp-PA-unsplash.jpg',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
 };
@@ -172,7 +262,7 @@ export const info = {
 export const faq = {
   title: 'Facts and Questions',
   image:
-    'https://i.postimg.cc/X76x6hj6/ian-dooley-Du-BNA1-QMp-PA-unsplash.jpg',
+    'https://i.postimg.cc/JtVyzVVb/franck-v-u1-EKBsm4g4-A-unsplash.jpg',
   description:
     'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 };

@@ -1,13 +1,14 @@
 import React from 'react';
 import Home from '../Home/HomeContainer';
 import Info from '../Info/Info.js';
-import Faq from '../FAQ/Faq.js';
+import Faq from '../Faq/Faq.js';
 import { BrowserRouter, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout.js';
 import { AnimatedSwitch } from 'react-router-transition';
 import styles from './App.scss';
 import List from '../List/ListContainer';
-//ZROBIĆ ZMIANY W KOMPONENCIE home 13.4
+import SearchResults from '../SearchResults/SearchResultsContainer';
+
 const App = () => (
   <BrowserRouter>
     <MainLayout>
@@ -21,6 +22,11 @@ const App = () => (
         <Route exact path="/info" component={Info} />
         <Route exact path="/faq" component={Faq} />
         <Route exact path="/list/:id" component={List} />
+        <Route
+          exact
+          path="/search/:title"
+          component={SearchResults}
+        />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
